@@ -26,7 +26,8 @@ function validate(){
         var errMsg=errors[i];
         var divMsg=divs[i];
         if(inputs[i]=="")
-        document.getElementById(divMsg).innerHTML=errMsg;
+
+            document.getElementById(divMsg).innerHTML=errMsg;
 
         else if(i==2){
             var atpos=inputs[i].indexOf("@");
@@ -73,4 +74,3 @@ function validate(){
             document.getElementById("errFinal").innerHTML="Please enter all the required fields.!!";
 
     }
-
