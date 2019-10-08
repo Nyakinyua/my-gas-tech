@@ -1,75 +1,76 @@
-function gas()                                    
-{ 
-    var name = document.forms["RegForm"]["Name"];               
-    var email = document.forms["RegForm"]["EMail"];    
-    var phone = document.forms["RegForm"]["Telephone"];  
-    var what =  document.forms["RegForm"]["Subject"];  
-    var password = document.forms["RegForm"]["Password"];  
-    var address = document.forms["RegForm"]["Address"];  
-   
-    if (name.value == "")                                  
-    { 
-        alert("Please enter your name."); 
-        name.focus(); 
-        return false; 
-    } 
-   
-    if (address.value == "")                               
-    { 
-        alert("Please enter your address."); 
-        name.focus(); 
-        return false; 
+var divs=new Array();
+divs[0]="errFirst";
+divs[1]="errLast";
+divs[2]="errEmail";
+divs[3]="errUid";
+divs[4]="errPwd";
+divs[5]="errConfirm";
+
+function validate(){
+    var inputs=new Array();
+    inputs[0]=document.getElementById('first').value;
+    inputs[1]=document.getElementById('last').value;
+    inputs[2]=document.getElementById('email').value;
+    inputs[3]=document.getElementById('uid').value;
+    inputs[4]=document.getElementById('pwd').value;
+    inputs[5]=document.getElementById('confirm').value;
+    var errors= new Array();
+    errors[0]="<span>Please enter your First name!</span>";
+    errors[1]="<span>Please enter your Last name!</span>";
+    errors[2]="<span>Please enter your e-mail-id!</span>";
+    errors[3]="<span>Please enter your User Id!</span>";
+    errors[4]="<span>Please enter your Password!</span>";
+    errors[5]="<span>Please enter your Confirm Password!</span>";
+    for(i in inputs){
+
+        var errMsg=errors[i];
+        var divMsg=divs[i];
+        if(inputs[i]=="")
+        document.getElementById(divMsg).innerHTML=errMsg;
+
+        else if(i==2){
+            var atpos=inputs[i].indexOf("@");
+            var dotpos=inputs[i].lastIndexOf(".");
+            if(atpos<1 || dotpos<atpos+2 || dotpos+2>= inputs[i].length)
+                document.getElementById('errEmail').innerHTML="<span>Enter Valid e-mail adderss!!</span>";
+            else
+                document.getElementById(divMsg).innerHTML="OK!";
+        }else if(i==5){
+            var ff=document.getElementById('pwd').value;
+            var ss=document.getElementById('confirm').value;
+            if(ss!=ff)
+                document.getElementById("errConfirm").innerHTML="<span>Your password doesnot match..!!</span>";
+            else
+                document.getElementById(divMsg).innerHTML="OK!";
+        }else
+            document.getElementById(divMsg).innerHTML="OK!";
     }
-    if (address.value == "")  
-                                 
-    { 
-        alert("Please enter your address."); 
-        name.focus(); 
-        return false; 
-    } 
-       
-    if (email.value == "")                                   
-    { 
-        alert("Please enter a valid e-mail address."); 
-        email.focus(); 
-        return false; 
-    } 
-   
-    if (email.value.indexOf("@", 0) < 0)                 
-    { 
-        alert("Please enter a valid e-mail address."); 
-        email.focus(); 
-        return false; 
-    } 
-   
-    if (email.value.indexOf(".", 0) < 0)                 
-    { 
-        alert("Please enter a valid e-mail address."); 
-        email.focus(); 
-        return false; 
-    } 
-    
-    if (phone.value == "")                           
-    { 
-        alert("Please enter your telephone number."); 
-        phone.focus(); 
-        return false; 
-    } 
-   
-    if (password.value == "")                        
-    { 
-        alert("Please enter your password"); 
-        password.focus(); 
-        return false; 
-    } 
-   
-    if (what.selectedIndex < 1)                  
-    { 
-        alert("Please enter your course."); 
-        what.focus(); 
-        return false; 
-    } 
-   
-    return true; 
+
 }
-     
+
+    function finalValidate()
+
+    {
+
+         var count = 0;
+
+        for(i=0;i<6;i++)
+
+        {
+
+          var divMsg = divs[i];
+
+          if(document.getElementById(divMsg).innerHTML == "OK!")
+
+               count = count + 1;
+
+        }
+
+       if(count == 6)
+
+         document.getElementById("errFinal").innerHTML = "All the data you entered is correct!!!";
+        else
+            document.getElementById("errFinal").innerHTML="Please enter all the required fields.!!";
+
+    }
+
