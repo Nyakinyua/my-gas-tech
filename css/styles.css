@@ -1,11 +1,22 @@
 body{
- background-image: url("");
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+#p{
+  background-image: url(/images/flame-580342_960_720.jpg);
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -500px;
+  background-attachment: fixed;
 }
 
 #p{
   text-align: center;
   padding-top:10%;
   font-weight: 600;
+  color:green;
 }
 
 #h,#a, #f, #s, #v, #f,#c{
