@@ -15,8 +15,12 @@ body{
   background-size: cover;
   z-index: -500px;
   background-attachment: fixed;
-  z-index: -8;
+  z-index: inherit 5%;
   margin:0px;
+}
+
+img{
+  background-color: rgba(45,43,54,0.7);
 }
 
 #p{
