@@ -1,68 +1,19 @@
+$("#sbmt").click(function(event)
+  {
+    event.preventDefault();
 
-function GAS()                                    
-{ 
-    var name = document.forms["RegForm"]["Name"];               
-    var email = document.forms["RegForm"]["EMail"];    
-    var phone = document.forms["RegForm"]["Telephone"];  
-    var what =  document.forms["RegForm"]["Subject"];  
-    var password = document.forms["RegForm"]["Password"];  
-    var address = document.forms["RegForm"]["Address"];  
-   
-    if (name.value == "")                                  
-    { 
-        window.alert("Please enter your name."); 
-        name.focus(); 
-        return false; 
-    } 
-   
-    if (address.value == "")                               
-    { 
-        window.alert("Please enter your address."); 
-        name.focus(); 
-        return false; 
-    } 
-       
-    if (email.value == "")                                   
-    { 
-        window.alert("Please enter a valid e-mail address."); 
-        email.focus(); 
-        return false; 
-    } 
-   
-    if (email.value.indexOf("@", 0) < 0)                 
-    { 
-        window.alert("Please enter a valid e-mail address."); 
-        email.focus(); 
-        return false; 
-    } 
-   
-    if (email.value.indexOf(".", 0) < 0)                 
-    { 
-        window.alert("Please enter a valid e-mail address."); 
-        email.focus(); 
-        return false; 
-    } 
-   
-    if (phone.value == "")                           
-    { 
-        window.alert("Please enter your telephone number."); 
-        phone.focus(); 
-        return false; 
-    } 
-   
-    if (password.value == "")                        
-    { 
-        window.alert("Please enter your password"); 
-        password.focus(); 
-        return false; 
-    } 
-   
-    if (what.selectedIndex < 1)                  
-    { 
-        alert("Please enter your course."); 
-        what.focus(); 
-        return false; 
-    } 
-   
-    return true; 
-}
+    var email=$("#contact-email").val();
+
+    if($("#user-name").val()==""){
+      alert("Please input name")
+    }
+    else if($("#contact-email").val()==""){
+      alert("Please input email")
+    }
+    else if($("#message").val()==""){
+      alert("Please input your message")
+    }
+  
+    else{
+    alert("Hello "+ email + "," + "welcome to delani your messege has been received and is being acted on. Thank you for reaching out to us.");}
+  });
