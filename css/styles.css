@@ -1,26 +1,36 @@
+*{
+  margin:0px;
+  padding:0px;
+}
 body{
   overflow-x: hidden;
   padding: 0px;
   margin: 0px;
 }
+
 #p{
-  background-image: url(/images/flame-580342_960_720.jpg);
-  height: 120vh;
+  background-image: url(/images/gas-burners-1772104_960_720.jpg);
+  height: 200vh;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -500px;
   background-attachment: fixed;
+  z-index: -8;
+  margin:0px;
 }
 
 #p{
   text-align: center;
   padding-top:10%;
   font-weight: 600;
-  color:green;
-  font-size:40px 
+  color:whitesmoke;
+  font-size:40px; 
 }
 
 #h,#a, #f, #s, #v, #f,#c{
-  color:red;
+  color:whitesmoke;
   font-size: 18px;
+}
+#fb, #t, #g, #d{
+  font-size: 12px;
 }
