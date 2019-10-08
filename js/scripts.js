@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
    $(".btn-login").submit(function(e) {
         e.preventDefault();
         var email=$("#loginFormEmail").val();
