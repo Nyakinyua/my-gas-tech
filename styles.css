@@ -17,3 +17,12 @@ h1{
     height: 100px;
     padding-top: 20px;
 }
+footer{
+    background-color: black;
+}
+#responsive_design{
+    background-size: auto;
+    min-height: 300px;
+    position: relative;
+    background: url();
+}
