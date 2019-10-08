@@ -2,6 +2,9 @@ body{
  background-image: url("");
 }
 
+#p{
+  text-align: center;
+}
 
 #h,#a, #f, #s, #v, #f,#c{
   color:red;
