@@ -1,5 +1,5 @@
-$(document).ready(function() {
-   $(".btn-login").submit(function(e) {
+$(document).ready (function(){
+    $(".btn-login").submit(function(e) {
         e.preventDefault();
         var email=$("#loginFormEmail").val();
         var password=$("#loginFormPassword").val();
@@ -9,6 +9,9 @@ $(document).ready(function() {
         }
         else if(password === "" && password.length < 8){
             alert("password must be atleast 8 characters")
+        }
+        else{
+            alert("login successful")
         }
     });
 });
