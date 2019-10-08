@@ -1,47 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>make order</title>
 </head>
+
 <body>
-    <div class="location">
-        <h2>Enter location</h2>
-        <select>
-                <option value ="Mathare">Mathare</option>
-                <option value ="Starehe">Starehe</option>
-                <option value ="Kamukunji">Kamukunji</option>
-                <option value ="Makadara">Makadara</option>
-                <option value ="Embakasi West">Embakasi West</option>
-                <option value ="Embakasi East">Embakasi East</option>
-                <option value ="Embakasi North">Embakasi North</option>
-                <option value ="Embakasi South">Embakasi South</option>
-                <option value ="Ruaraka">Ruaraka</option>
-                <option value ="Kasarani">Kasarani</option>
-                <option value ="Roysambu">Roysambu</option>
-                <option value ="Kibra">Kibra</option>
-                <option value ="Langata">Langata</option>
-                <option value ="Dagoretti South	">Dagoretti South</option>
-                <option value ="Dagoretti North">Dagoretti North</option>
-                <option value ="Westlands">Westlands</option>
+   <!-- <form action="" id="gasform" onsubmit="return false;">
+        <fieldset>
+            <label>Enter location</label>
+            <select id="location1" name='location' onchange="calculateTotal()">
+        
+                <option value="none">Select location</option>
+                <option value="Mathare">Mathare</option>
+                <option value="Starehe">Starehe</option>
+                <option value="Kamukunji">Kamukunji</option>
+                <option value="Makadara">Makadara</option>
+                <option value="Embakasi West">Embakasi West</option>
+                <option value="Embakasi East">Embakasi East</option>
+                <option value="Embakasi North">Embakasi North</option>
+                <option value="Embakasi South">Embakasi South</option>
+                <option value="Ruaraka">Ruaraka</option>
+                <option value="Kasarani">Kasarani</option>
+                <option value="Roysambu">Roysambu</option>
+                <option value="Kibra">Kibra</option>
+                <option value="Langata">Langata</option>
+                <option value="Dagoretti South	">Dagoretti South</option>
+                <option value="Dagoretti North">Dagoretti North</option>
+                <option value="Westlands">Westlands</option>
+            </select>
+            </div><br>
+
+            <label>select cylinder size</label>
+            <select id="size" name="gassize" onchange="calculateTotal()">
+                <option value="6kg">6kg</option>
+                <option value="13kg">13kg</option>
+                <option value="22kg">35kg</option>
+                <option value="50kg">50kg</option>
+            </select><br>
+
+            <label>choose action</label><br>
+            <input type="radio" name="gas" value="Refill" onclick="calculateTotal()" />Refill<br>
+            <input type="radio" name="gas" value="Swap" onclick="calculateTotal()" />Swap<br>
+            <input type="radio" name="gas" value="Refill+Swap" onclick="calculateTotal()" />Refill + Swap<br>
+            <input type="radio" name="gas" value="New cylinder" onclick="calculateTotal()" /> New cylinder<br>
+            <input type="radio" name="gas" value="new cylinder+gas" onclick="calculateTotal()" />New cylinder+gas<br>
+
+
+            <label>gas-type</label>
+            <input type="radio" name="gas-type" value="Total" onclick="calculateTotal()" />Total
+            <input type="radio" name="gas-type" value="Afrigas" onclick="calculateTotal()" />Afrigas
+            <input type="radio" name="gas-type" value="K-gas" onclick="calculateTotal()" />K-gas
+            <input type="radio" name="gas-type" value="Safe-gas" onclick="calculateTotal()" />Safe gas
+            <input type="radio" name="gas-type" value="Supa gas" onclick="calculateTotal()" />Supa gas
+            <input type="radio" name="gas-type" value="Pro gas" onclick="calculateTotal()" />Pro gas
+            <input type="radio" name="gas-type" value="Any brand" onclick="calculateTotal()" />Any brand
+
+            <div class="delivery-option">
+                <input type="radio" name="delivery" value="asap">Deliver now<br>
+                <input type="radio" name="delivery" value="asap">Deliver later<br>
+            </div>
+           <!-- <div class="date">
+                <input type="date" value="pickup-date">choose pickup date
+            </div>
+            <div id="totalPrice"></div>>
+        </fieldset>
+    </form>-->
+    <form action="" id="cakeform" onsubmit="return false;">
+        <fieldset>
+         <legend>Make your cake!</legend>
+         <label >Size Of the Cake</label>
+         <input type="radio"  name="selectedcake" value="Round6"
+         onclick="calculateTotal()" />
+         Round cake 6" -  serves 8 people ($20)
+         <input type="radio"  name="selectedcake" value="Round8"
+         onclick="calculateTotal()" />
+         Round cake 8" - serves 12 people ($25)
+         <input type="radio"  name="selectedcake" value="Round10"
+         onclick="calculateTotal()" />
+         Round cake 10" - serves 16 people($35)
+         <input type="radio"  name="selectedcake" value="Round12"
+         onclick="calculateTotal()" />
+         Round cake 12" - serves 30 people($75)
+      
+         <label >Filling</label>
+      
+         <select id="filling" name='filling'
+         onchange="calculateTotal()">
+         <option value="None">Select Filling</option>
+         <option value="Lemon">Lemon($5)</option>
+         <option value="Custard">Custard($5)</option>
+         <option value="Fudge">Fudge($7)</option>
+         <option value="Mocha">Mocha($8)</option>
+         <option value="Raspberry">Raspberry($10)</option>
+         <option value="Pineapple">Pineapple($5)</option>
+         <option value="Dobash">Dobash($9)</option>
+         <option value="Mint">Mint($5)</option>
+         <option value="Cherry">Cherry($5)</option>
+         <option value="Apricot">Apricot($8)</option>
+         <option value="Buttercream">Buttercream($7)</option>
+         <option value="Chocolate Mousse">Chocolate Mousse($12)</option>
         </select>
-    </div>
-    <h2>Choose what you want</h2>
-    <div class="option">
-            <input type="radio" name="gas" value="Refill" >Refill<br>
-            <input type="radio" name="gas" value="Swap">Swap<br>
-            <input type="radio" name="gas" value="New cylinder"> New cylinder<br>
-            <input type="radio" name="gas" value="new cylinder+gas ">New cylinder+gas<br>
-    </div>
-    <h2>select cylinder size</h2>
-    <select>
-        <option value="6kg">6kg</option>
-        <option value="13kg">13kg</option>
-        <option value="35kg">35kg</option>
-        <option value="50kg">50kg</option>
-    </select>
-    
+         <br/>
+         <p>
+         <label for='includecandles' class="inlinelabel">
+         Include Candles($5)</label>
+         <input type="checkbox" id="includecandles" name='includecandles'
+         onclick="calculateTotal()" />
+        </p>
+      
+         <p>
+         <label class="inlinelabel" for='includeinscription'>
+         Include Inscription($20)</label>
+         <input type="checkbox" id="includeinscription"
+         name="includeinscription" onclick="calculateTotal()" />
+      
+         <input type="text"  id="theinscription"
+         name="theinscription" value="Enter Inscription"  />
+         </p>
+         <div id="totalPrice"></div>
+      
+         </fieldset>
+     </form>
+     
 </body>
+
 </html>
