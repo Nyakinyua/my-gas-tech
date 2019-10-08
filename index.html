@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,43 +9,52 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js"></script>
 
-    
+
 </head>
+
 <body>
     <form name="registerform">
         <ul>
             <li>
-            <label>First Name:</label>
-                <input type="text" id="first" onKeyup="validate()"> <div id="errFirst"></div>
+                <label>First Name:</label>
+                <input type="text" id="first" onKeyup="validate()">
+                <div id="errFirst"></div>
             </li>
             <li>
-            <label>Last Name:</label>
-                <input type="text" id="last" onkeyup="validate()"> <div id="errLast"></div>
+                <label>Last Name:</label>
+                <input type="text" id="last" onkeyup="validate()">
+                <div id="errLast"></div>
             </li>
             <li>
-            <label>e-mail id:</label>
-                <input type="text" id="email" onkeyup="validate()"> <div id="errEmail"></div>
+                <label>e-mail id:</label>
+                <input type="text" id="email" onkeyup="validate()">
+                <div id="errEmail"></div>
             </li>
             <li>
-            <label>User Id:</label>
-                <input type="text" id="uid" onkeyup="validate()"><div id="errUid"></div> 
+                <label>User Id:</label>
+                <input type="text" id="uid" onkeyup="validate()">
+                <div id="errUid"></div>
             </li>
             <li>
-            <label>Password:</label>
-                <input type="password" id="pwd" onkeyup="validate()"> <div id="errPwd"></div>
+                <label>Password:</label>
+                <input type="password" id="pwd" onkeyup="validate()">
+                <div id="errPwd"></div>
             </li>
             <li>
-            <label>Confirm Password:</label>
-                <input type="password" id="confirm" onkeyup="validate()"> <div id="errConfirm"></div>
+                <label>Confirm Password:</label>
+                <input type="password" id="confirm" onkeyup="validate()">
+                <div id="errConfirm"></div>
             </li>
             <li>
-                <input type="button" value="register" id="create" onclick="validate(); finalValidate();"><div id="errFinal"></div>
+                <input type="button" value="register" id="create" onclick="validate(); finalValidate();">
+                <div id="errFinal"></div>
             </li>
         </ul>
     </form>
 
-</div>
-     
-    
+    </div>
+
+
 </body>
+
 </html>
