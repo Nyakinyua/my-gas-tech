@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+div{
+    display: block;
+}
+p{
+    color: white;
+}
+.head{
+    background: darkslategray;
+}
+h1{
+    background-color: brown;
+    min-height: 41px;
+    color: #fff;
+    height: 100px;
+    padding-top: 20px;
+}
