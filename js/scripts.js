@@ -1,5 +1,5 @@
 
-function GEEKFORGEEKS()                                    
+function GAS()                                    
 { 
     var name = document.forms["RegForm"]["Name"];               
     var email = document.forms["RegForm"]["EMail"];    
