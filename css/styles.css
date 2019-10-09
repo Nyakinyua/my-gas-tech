@@ -1,3 +1,4 @@
+
 body{
     background-image:url("https://i.stack.imgur.com/XriZj.png");
     background-repeat: no-repeat;
@@ -54,3 +55,16 @@ button{
     padding: 2px;
     margin: 10px;
 }
+body {
+  font-family: 'Itim', cursive;
+  font-weight: 900;
+  font-size:20px;
+  }
+  h1{
+    border-top:2px solid black;
+  }
+  h3{
+    font-size:30px;
+  }
+  
+
