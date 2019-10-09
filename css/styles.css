@@ -7,6 +7,9 @@ body{
   padding: 0px;
   margin: 0px;
 }
+.gases{
+  display: flex;
+}
 
 #p{
   background-image: url(/images/gas-burners-1772104_960_720.jpg);
@@ -19,8 +22,20 @@ body{
   margin:0px;
 }
 
-img{
-  background-color: rgba(45,43,54,0.7);
+/* img{
+  background-color: rgba(56, 56, 56, 0.7);
+  background-color: cover;
+  
+} */
+#image{
+  position: relative;
+  margin-top: -70%;
+}
+
+#image img{
+  position: relative;
+  margin-bottom: 20%;
+
 }
 
 #p{
