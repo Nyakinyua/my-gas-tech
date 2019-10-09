@@ -6,6 +6,7 @@ body{
   overflow-x: hidden;
   padding: 0px;
   margin: 0px;
+  background-image: url("https://cdn.pixabay.com/photo/2012/12/09/00/16/smoke-69124_960_720.jpg")
 }
 .gases{
   display: flex;
@@ -16,11 +17,11 @@ img{
   height:578px;
 }
 
-h1{
-  padding-bottom: 20%;
+h3{
+  padding-bottom: 44%;
   color:black;
   font-weight: bold;
-  font-size:80px;
+  font-size:40px;
 }
 
 p{
