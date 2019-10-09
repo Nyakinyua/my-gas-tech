@@ -7,18 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <sript src="js/jquery-3.4.1.js"></sript>    
     <script src="js/scripts.js"></script> 
     <title>make order</title>
 </head>
 
-<body onload='hideTotal()'>
+<body>
     <div id="wrap">
-    <form action="" id="gasform" onsubmit="return false;">
+    <form action="" id="gasform1" onsubmit="return false;">
+        <div class="gas-form-order">
         <fieldset>
             <label>Enter location</label>
-            <select id="location1" name='location' onchange="calculateTotal()">
-        
+            <select id="location1" name='location' required>
                 <option value="none">Select location</option>
                 <option value="Mathare">Mathare</option>
                 <option value="Starehe">Starehe</option>
@@ -39,41 +40,79 @@
             </select>
             </div><br>
 
-            <label>select cylinder size</label>
-            <select id="size" name="gassize" onchange="calculateTotal()">
-                <option value="6kg">6kg</option>
-                <option value="13kg">13kg</option>
-                <option value="22kg">35kg</option>
-                <option value="50kg">50kg</option>
+            <!--<label>select cylinder size</label>
+            <select id="size" name="gassize">
+                <option value="6kg" data-price="600">6kg</option>
+                <option value="13kg" data-price="1000">13kg</option>
+                <option value="22kg" data-price="1800">35kg</option>
+                <option value="50kg"data-price="2500">50kg</option>
             </select><br>
 
             <label>choose action</label><br>
-            <input type="radio" name="gas" value="Refill" onclick="calculateTotal()" />Refill<br>
-            <input type="radio" name="gas" value="Swap" onclick="calculateTotal()" />Swap<br>
-            <input type="radio" name="gas" value="Refill+Swap" onclick="calculateTotal()" />Refill + Swap<br>
-            <input type="radio" name="gas" value="New cylinder" onclick="calculateTotal()" /> New cylinder<br>
-            <input type="radio" name="gas" value="new cylinder+gas" onclick="calculateTotal()" />New cylinder+gas<br>
+            <input type="radio" name="gas" value="Refill" data-price="100">Refill<br>
+            <input type="radio" name="gas" value="Swap" data-price="200">Swap<br>
+            <input type="radio" name="gas" value="Refill+Swap" data-price="250">Refill + Swap<br>
+            <input type="radio" name="gas" value="New cylinder" data-price="3000"> New cylinder<br>
+            <input type="radio" name="gas" value="new cylinder+gas" data-price="4000">New cylinder+gas<br>
 
 
             <label>gas-type</label>
-            <input type="radio" name="gas-type" value="Total" onclick="calculateTotal()" />Total
-            <input type="radio" name="gas-type" value="Afrigas" onclick="calculateTotal()" />Afrigas
-            <input type="radio" name="gas-type" value="K-gas" onclick="calculateTotal()" />K-gas
-            <input type="radio" name="gas-type" value="Safe-gas" onclick="calculateTotal()" />Safe gas
-            <input type="radio" name="gas-type" value="Supa gas" onclick="calculateTotal()" />Supa gas
-            <input type="radio" name="gas-type" value="Pro gas" onclick="calculateTotal()" />Pro gas
-            <input type="radio" name="gas-type" value="Any brand" onclick="calculateTotal()" />Any brand
+            <input type="radio" name="gas-type1" value="Total" data-price="150">Total
+            <input type="radio" name="gas-type1" value="Afrigas" data-price="100">Afrigas
+            <input type="radio" name="gas-type1" value="K-gas" data-price="150">K-gas
+            <input type="radio" name="gas-type1" value="Safe-gas" data-price="180">Safe gas
+            <input type="radio" name="gas-type1" value="Supa gas" data-price="120">Supa gas
+            <input type="radio" name="gas-type1" value="Pro gas" data-price="100">Pro gas
+            <input type="radio" name="gas-type1" value="Any brand" data-price="200">Any brand
 
             <div class="delivery-option">
                 <input type="radio" name="delivery" value="asap">Deliver now<br>
                 <input type="radio" name="delivery" value="asap">Deliver later<br>
-            </div>
-           <!-- <div class="date">
-                <input type="date" value="pickup-date">choose pickup date
-            </div>
-            <div id="totalPrice"></div>>-->
-        </fieldset>
-    </form>
+            </div><br><br>
+                <label for='total'>Total price</label>
+                <input type="text"  id="total" name='total' readonly="readonly" />
+         </fieldset>
+    
+    </form>-->
+    <div class="cont_order">
+        <fieldset>
+         <legend>Order Your gas</legend>
+         <label >Size of your gas</label><br>
+         <label class='radiolabel'><input type="radio"  name="selectedgas" value="6kg" data-price="600" />6kg</label><br/>
+         <label class='radiolabel'><input type="radio"  name="selectedgas" value="13kg" data-price="800" />13kg</label><br/>
+         <label class='radiolabel'><input type="radio"  name="selectedgas" value="22kg" data-price="1800" />22kg</label><br/>
+         <label class='radiolabel'><input type="radio"  name="selectedgas" value="50kg" data-price="2500" />50kg</label><br/>
+         <br/>
+         
+    
+         <label >Choose action</label><br>
+         <label class='radiolabel'><input type="radio"  name="selectedoption" value="refill" data-price="50" />Refill</label><br/>
+         <label class='radiolabel'><input type="radio"  name="selectedoption" value="swap" data-price="100" />Swap</label><br/>
+         <label class='radiolabel'><input type="radio"  name="selectedoption" value="refill + swap" data-price="300" />Refill + Swap</label><br/>
+         <label class='radiolabel'><input type="radio"  name="selectedoption" value="new cylinder" data-price="400" />New cylinder</label><br/>
+         <label class='radiolabel'><input type="radio"  name="selectedoption" value="new cylinder+ gas" data-price="500" />New cylinder + gas</label><br/>
+         <br/>
+         
+         
+         
+         <label >gas Filling</label>
+
+         <select id="filling" name='filling'>
+         <option value="None">Select Filling</option>
+         <option value="progas" data-price="200">Progas</option>
+         <option value="k-gas" data-price="300">K-gas</option>
+         <option value="hashi" data-price="150">Hashi</option>
+         <option value="Afrigas" data-price="180">Afrigas</option>
+         <option value="Oil libya" data-price="300">Oil libya</option>
+         <option value="supa gas" data-price="250">supa gas</option>
+         <option value="other" data-price="300">Other</option>
+          
+        </select><br>
+        <label for='total'>Total price</label>
+        <input type="text"  id="total" name='total' readonly="readonly" />
+         <br/>            
+         </fieldset>
+     </div>
 </div>
 </body>
 
