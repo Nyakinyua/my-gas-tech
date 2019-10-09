@@ -103,6 +103,6 @@ $(function() {
    });
 
    $("#deliver").click(function(){
-     alert("Your order will be delivered within 30min")
+     alert("Your order will be delivered within 30min stay updated will deliver soon")
    })
 });
