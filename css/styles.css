@@ -67,16 +67,22 @@ p{
   padding-top:10%;
   font-weight: 600;
   color:whitesmoke;
-  font-size:40px; 
+  font-size:40px;
+  font-family: 'Itim', cursive;
+ 
 }
 
 #h,#a, #f, #s, #v, #f,#c{
   color:whitesmoke;
   font-size: 18px;
+  font-family: 'Itim', cursive;
+
 }
 
 #fb, #t, #g, #d{
   font-size: 12px;
+  font-family: 'Itim', cursive;
+
 }
 
 #up{
@@ -85,4 +91,9 @@ p{
 
 #wrapper>img{
  background-image: ;
+}
+
+#wrapper{
+  font-family: 'Itim', cursive;
+
 }
