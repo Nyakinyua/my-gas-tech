@@ -22,11 +22,6 @@ body{
   margin:0px;
 }
 
-/* img{
-  background-color: rgba(56, 56, 56, 0.7);
-  background-color: cover;
-  
-} */
 #image{
   position: relative;
   margin-top: -70%;
@@ -50,6 +45,7 @@ body{
   color:whitesmoke;
   font-size: 18px;
 }
+
 #fb, #t, #g, #d{
   font-size: 12px;
 }
