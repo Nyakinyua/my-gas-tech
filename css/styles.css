@@ -86,7 +86,7 @@ p{
 }
 
 #up{
-  padding-left: 49%;
+  padding-left: 58%;
 }
 
 #wrapper>img{
@@ -95,5 +95,8 @@ p{
 
 #wrapper{
   font-family: 'Itim', cursive;
+}
 
+#tag{
+  color:whitesmoke;
 }
