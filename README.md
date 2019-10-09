@@ -17,7 +17,7 @@ MY-GAS-TECH Limited provides the ultimate online plan that links the cooking gas
 
 
 ## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+Delivery is limited to availability of distributors within your locality.
 ## Technologies Used
 - HTML5
 - CSS
@@ -27,7 +27,7 @@ MY-GAS-TECH Limited provides the ultimate online plan that links the cooking gas
 ## BDD
 
 ## Support and contact details
-
+For insights and contributions towards this application, feel free to contact the following contributors...
 
 ### License
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
