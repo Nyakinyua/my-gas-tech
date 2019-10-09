@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/styles.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <sript src="js/jquery-3.4.1.js"></sript>
+   <script src="js/scripts.js"></script>
+    <title>gas</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="box a">
+                <h2>VISION 2030 GAS</h2>
+                <p>We are located in kahawa sukari near quick mart supermarket.</p>
+                <p>We deal in all brands of Gas cylinders.</p>
+                <h3>Prices for a complete new Gas cylinders:</h3>
+                <p>13KG @ 10000.kshs<br>6KG @ 3000.kshs</p>
+                <h3>Prices for Refill Gas cylinders:</h3>
+                <p>13KG @ 1700.kshs<br>6KG @ 700.kshs</p>
+                <button onclick="document.getElementById('idorder').style.display='block'">ORDER</button>
+            </div>
+
+            <div class="box b">
+                <h2>MAKINI GAS</h2>
+                <p>We are located in kahawa wendani opposite cleanshelf supermarket.</p>
+                <p>We deal in all brands of Gas cylinders.</p>
+                <h3>Prices for a complete new Gas cylinders:</h3>
+                <p>13KG @ 10000.kshs<br>6KG @ 3000.kshs</p>
+                <h3>Prices for Refill Gas cylinders:</h3>
+                <p>13KG @ 1700.kshs<br>6KG @ 700.kshs</p>
+                <button onclick="document.getElementById('idorder').style.display='block'">ORDER</button>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="box c">
+                <h2>WAMARY'S GAS</h2>
+                <p>We are located in kahawa wendani next magunas supermarket.</p>
+                <p>We deal in all brands of Gas cylinders.</p>
+                <h3>Prices for a complete new Gas cylinders:</h3>
+                <p>13KG @ 10000.kshs<br>6KG @ 3000.kshs</p>
+                <h3>Prices for Refill Gas cylinders:</h3>
+                <p>13KG @ 1700.kshs<br>6KG @ 700.kshs</p>
+                <button onclick="document.getElementById('idorder').style.display='block'">ORDER</button>
+            </div>
+
+            <div class="box d">
+                <h2>FAULU GAS</h2>
+                <p>We are located in kahawa sukari near Engen petro station.</p>
+                <p>We deal in all brands of Gas cylinders.</p>
+                <h3>Prices for a complete new Gas cylinders:</h3>
+                <p>13KG @ 10000.kshs<br>6KG @ 3000.kshs</p>
+                <h3>Prices for Refill Gas cylinders:</h3>
+                <p>13KG @ 1700.kshs<br>6KG @ 700.kshs</p>
+                <button onclick="document.getElementById('idorder').style.display='block'">ORDER</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="idorder" class="modal">
+        <button onclick="document.getElementById('idorder').style.display='none'" class="close"
+            title="Close Modal">&times;</button>
+        <form action="" id="gasform1" onsubmit="return false;">
+            <div class="gas-form-order">
+                <fieldset>
+                    <label>Enter location</label>
+                    <select id="location1" name='location' required>
+                        <option value="none">Select location</option>
+                        <option value="Mathare">Mathare</option>
+                        <option value="Starehe">Starehe</option>
+                        <option value="Kamukunji">Kamukunji</option>
+                        <option value="Makadara">Makadara</option>
+                        <option value="Embakasi West">Embakasi West</option>
+                        <option value="Embakasi East">Embakasi East</option>
+                        <option value="Embakasi North">Embakasi North</option>
+                        <option value="Embakasi South">Embakasi South</option>
+                        <option value="Ruaraka">Ruaraka</option>
+                        <option value="Kasarani">Kasarani</option>
+                        <option value="Roysambu">Roysambu</option>
+                        <option value="Kibra">Kibra</option>
+                        <option value="Langata">Langata</option>
+                        <option value="Dagoretti South	">Dagoretti South</option>
+                        <option value="Dagoretti North">Dagoretti North</option>
+                        <option value="Westlands">Westlands</option>
+                    </select>
+            </div><br>
+            ​
+            <fieldset>
+                <legend>Order Your gas</legend>
+                <label>Size of your gas</label><br>
+                <label class='radiolabel'><input type="radio" name="selectedgas" value="6kg"
+                        data-price="600" />6kg</label><br />
+                <label class='radiolabel'><input type="radio" name="selectedgas" value="13kg"
+                        data-price="800" />13kg</label><br />
+                <label class='radiolabel'><input type="radio" name="selectedgas" value="22kg"
+                        data-price="1800" />22kg</label><br />
+                <label class='radiolabel'><input type="radio" name="selectedgas" value="50kg"
+                        data-price="2500" />50kg</label><br />
+                <br />
+
+
+                <label>Choose action</label><br>
+                <label class='radiolabel'><input type="radio" name="selectedoption" value="refill"
+                        data-price="50" />Refill</label><br />
+                <label class='radiolabel'><input type="radio" name="selectedoption" value="swap"
+                        data-price="100" />Swap</label><br />
+                <label class='radiolabel'><input type="radio" name="selectedoption" value="refill + swap"
+                        data-price="300" />Refill + Swap</label><br />
+                <label class='radiolabel'><input type="radio" name="selectedoption" value="new cylinder"
+                        data-price="400" />New cylinder</label><br />
+                <label class='radiolabel'><input type="radio" name="selectedoption" value="new cylinder+ gas"
+                        data-price="500" />New cylinder + gas</label><br />
+                <br />
+
+
+
+                <label>gas Filling</label>
+                ​
+                <select id="filling" name='filling'>
+                    <option value="None">Select Filling</option>
+                    <option value="progas" data-price="200">Progas</option>
+                    <option value="k-gas" data-price="300">K-gas</option>
+                    <option value="hashi" data-price="150">Hashi</option>
+                    <option value="Afrigas" data-price="180">Afrigas</option>
+                    <option value="Oil libya" data-price="300">Oil libya</option>
+                    <option value="supa gas" data-price="250">supa gas</option>
+                    <option value="other" data-price="300">Other</option>
+
+                </select><br>
+                <label for='total'>Total price</label>
+                <input type="text" id="total" name='total' readonly="readonly" />
+                <br />
+
+                <div class="delivery-option">
+                    <button id="deliver">Deliver</button>
+
+                </div><br><br>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="footer">
+        <table border="0" width="100%" height="100%">
+            <tr>
+                <td><a href="index.html#home">BACK TO HOME</a></td>
+            </tr>
+    </div>
+</body>
+</html>
