@@ -11,13 +11,23 @@ body{
   display: flex;
 }
 
-h5{
-  padding-bottom: 30%;
-  color:black;
-  font-weight: bold;
+img{
+  width: 100%;
+  height:578px;
 }
 
-#p{
+h1{
+  padding-bottom: 20%;
+  color:black;
+  font-weight: bold;
+  font-size:80px;
+}
+
+p{
+  color:black;
+}
+
+/* #p{
   background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0 ,0 , 0, 0.6)), url(/images/gas-burners-1772104_960_720.jpg);
   height: 200vh;
   background-repeat: no-repeat;
@@ -26,7 +36,7 @@ h5{
   background-attachment: fixed;
   z-index: inherit 5%;
   margin:0px;
-}
+} */
 
 /* #image{
   position: relative;
