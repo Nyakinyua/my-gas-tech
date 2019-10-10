@@ -1,35 +1,37 @@
 
 # MY-GAS-TECH
-#### By **Nyakinyua Wanjiru**
+#### By 
+- **[George](https://github.com/georgewanyama)**
+- **[Nyakinyua](https://www.https://github.com/Nyakinyua)**
+-  **[Nyakinyua](https://www.https://github.com/Nyakinyua)**
+### Description
+![](/images/fbbb3c49-a7fb-40fe-829a-58cc25e692e0_200x200.png)
+
 MY-GAS-TECH Limited provides the ultimate online plan that links the cooking gas suppliers with their customers via mobile app and GPS technology. Our aim is to give cooking gas suppliers in Kenya an opportunity to grow their business by providing timely deliveries and excellent services to their customers. With our web app, the convenience of customers to receive gas on real time basis is enhanced and with less hustle. Everything in our online gas delivery platform is automated, from placing an order till delivery. MY-TECH-GAS app technology will positively change the way gas delivery business is conducted.
 ## Project setup instructions
-To start using this project use the following commands:
-- git clone https://github.com/jonnygovish/IP3.git
-- cd 
-- atom .
-- code . [//]: # (this is if Visual Studio Code is your preferred text editor)
+There are no setup requirements for this website
 
 ## Known Bugs
-* The site is not responsive enough for some devices. 
-* mail chimp API does not function properly.
-* Portfolio section doesn't give proper description of displayed images
+* Deliveries are only limited to the availability of delivery persons within the specified locality
 ## Technologies Used
-* [HTML5]
-* [CSS]
-* [Bootstrap]
-* [jQuery](
+* HTML5
+* CSS
+* Bootstrap
+* jQuery
 * markdown
 
 
 ## BDD
+### order gas
 | Behaviour      | Input        | Output       |
 | :------------- | :----------: | -----------: |
-|  Enter your name  |   Nyakinyua wanjiru |     |
-| Enter your Email Address  | wanyakinyua968@gmail.com |   |
-| Enter your message or comment   |  I'd like you to design my webpage     |     |
-| Press Submit|     |Pop up "Thank you Nyakinyua Wanjiru for reaching out. Your message has been received and is being acted upon. Always keep it Delani Studios .|
+|  Enter your location  |   Adams |     |
+| Enter gas size  | 13kg |   |
+| Enter action   |  Refill     |     |
+| Press Deliver|     |Pop up "Your delivry will be made within 20 minutes at Adams" .|
 ## Support and contact details
-For questions and contributions towards the project, feel free to contact me via  email at [wanyakinyua968@@gmail.com]
+For questions and contributions towards the project, feel free to contact the contributors[wanyakinyua968@@gmail.com] via  email at 
+[odhiambosam@gmail.com]
 ## License info
 MIT License
 
