@@ -3,7 +3,8 @@
 #### By 
 - **[George](https://github.com/georgewanyama)**
 - **[Nyakinyua](https://www.https://github.com/Nyakinyua)**
--  **[Nyakinyua](https://www.https://github.com/Nyakinyua)**
+-  **[Sammy](https://www.https://github.com/)**
+-  **[Dancan](https://www.https://github.com/)**
 ### Description
 ![](/images/fbbb3c49-a7fb-40fe-829a-58cc25e692e0_200x200.png)
 
