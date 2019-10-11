@@ -1,0 +1,159 @@
+
+body{
+    background-image:url("https://i.stack.imgur.com/XriZj.png");
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-size: 100%;
+    font-family: 'Itim', cursive;
+    background: rgba(25, 25, 26, 0.8);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding-top: 60px;
+  
+  }
+  
+form {
+    background-color:white ;
+    text-align: center;
+    margin: 5px auto;
+    width: 35%;
+    height: 100%;
+    overflow: scroll;
+  }
+
+.close {
+    position: absolute;
+    right: 400px;
+    top: 50px;
+    font-size: 30px;
+}
+    
+h1{
+  text-align: center;
+  font-family: 'Itim', cursive;
+  color:white;
+}
+
+button{
+  width: 46%;
+    border-radius: 5%;
+    background-color: #7290da;
+}
+
+.card{
+  border-radius: 5%;
+    padding: 2px;
+    margin: 10px;
+}
+
+.about {
+  font-family: 'Itim', cursive;
+  font-weight: 900;
+  font-size:20px;
+  }
+  #joy h1{
+    border-top:2px solid black;
+  }
+  #joy h3{
+    font-size:30px;
+  }
+  #joy .jumbotron{
+    width:400px;
+    height:100%;
+  }
+  
+*{
+  margin:0px;
+  padding:0px;
+}
+.main {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+background-image: url("https://cdn.pixabay.com/photo/2012/12/09/00/16/smoke-69124_960_720.jpg");
+
+}
+.gases{
+  display: flex;
+}
+
+.main > img{
+  width: 100%;
+  height:578px;
+}
+
+.main > h3{
+  padding-bottom: 44%;
+  color:black;
+  font-weight: bold;
+  font-size:40px;
+  font-family: 'Itim', cursive;
+
+}
+
+.main > h4{
+  text-align:center;
+  color:whitesmoke;
+  font-weight: bold;
+  font-family: 'Itim', cursive;
+}
+
+.main > p{
+  color:black;
+  font-weight:bolder;
+  font-family: 'Itim', cursive;
+
+}
+
+#p{
+  text-align: center;
+  padding-top:10%;
+  font-weight: 600;
+  color:whitesmoke;
+  font-size:40px;
+  font-family: 'Itim', cursive;
+ 
+}
+
+#h,#a, #f, #s, #v, #f{
+  color:whitesmoke;
+  font-size: 18px;
+  font-family: 'Itim', cursive;
+
+}
+
+#fb, #t, #g, #d{
+  font-size: 12px;
+  font-family: 'Itim', cursive;
+
+}
+
+#up{
+  padding-left: 58%;
+}
+
+#wrapper{
+  font-family: 'Itim', cursive;
+}
+
+#tag{
+  color:whitesmoke;
+}
+
+.carousel-item > img {
+  height: 100vh;
+}
+#logo {
+float:left;
+width:40;
+}
