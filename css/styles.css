@@ -6,7 +6,8 @@ body{
   overflow-x: hidden;
   padding: 0px;
   margin: 0px;
-  background-image: url("https://cdn.pixabay.com/photo/2012/12/09/00/16/smoke-69124_960_720.jpg")
+  background-image: url("https://cdn.pixabay.com/photo/2012/12/09/00/16/smoke-69124_960_720.jpg");
+
 }
 .gases{
   display: flex;
