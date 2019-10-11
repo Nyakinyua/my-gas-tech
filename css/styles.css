@@ -1,15 +1,15 @@
-body {
+.about {
   font-family: 'Itim', cursive;
   font-weight: 900;
   font-size:20px;
   }
-  h1{
+  #joy h1{
     border-top:2px solid black;
   }
-  h3{
+  #joy h3{
     font-size:30px;
   }
-  .jumbotron{
+  #joy .jumbotron{
     width:400px;
     height:100%;
   }
@@ -18,23 +18,23 @@ body {
   margin:0px;
   padding:0px;
 }
-body{
+.main {
   overflow-x: hidden;
   padding: 0px;
   margin: 0px;
-  background-image: url("https://cdn.pixabay.com/photo/2012/12/09/00/16/smoke-69124_960_720.jpg");
+background-image: url("https://cdn.pixabay.com/photo/2012/12/09/00/16/smoke-69124_960_720.jpg");
 
 }
 .gases{
   display: flex;
 }
 
-img{
+.main > img{
   width: 100%;
   height:578px;
 }
 
-h3{
+.main > h3{
   padding-bottom: 44%;
   color:black;
   font-weight: bold;
@@ -43,14 +43,14 @@ h3{
 
 }
 
-h4{
+.main > h4{
   text-align:center;
   color:whitesmoke;
   font-weight: bold;
   font-family: 'Itim', cursive;
 }
 
-p{
+.main > p{
   color:black;
   font-weight:bolder;
   font-family: 'Itim', cursive;
@@ -90,4 +90,12 @@ p{
 
 #tag{
   color:whitesmoke;
+}
+
+.carousel-item > img {
+  height: 100vh;
+}
+#logo {
+float:left;
+width:40;
 }
