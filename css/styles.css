@@ -1,5 +1,5 @@
 
-body{
+.order{
     background-image:url("https://i.stack.imgur.com/XriZj.png");
     background-repeat: no-repeat;
     background-image: cover;
@@ -33,9 +33,10 @@ form {
 
 .close {
     position: absolute;
-    right: 400px;
+    right: 100px;
     top: 50px;
     font-size: 30px;
+    color:white;
 }
     
 h1{
