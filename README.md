@@ -31,8 +31,8 @@ There are no setup requirements for this website
 | Enter action   |  Refill     |     |
 | Press Deliver|     |Pop up "Your delivry will be made within 20 minutes at Adams" .|
 ## Support and contact details
-For questions and contributions towards the project, feel free to contact the contributors[wanyakinyua968@@gmail.com] via  email at 
-[odhiambosam@gmail.com]
+For questions and contributions towards the project, feel free to contact the contributors  via  email at 
+odhiambosam@gmail.com
 ## License info
 MIT License
 
