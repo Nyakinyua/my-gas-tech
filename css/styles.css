@@ -66,5 +66,8 @@ body {
   h3{
     font-size:30px;
   }
+  .jumbotron{
+    width:400px;
+    height:100%;
+  }
   
-
